@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navication</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: "Zen Dots", cursive;
+      }
+
+      nav {
+        width: 100%;
+        height: 80px;
+        background: #d9d4d4;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav .kid {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav .kid img {
+        width: 100px;
+      }
+
+      nav .kid h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #646464;
+      }
+
+      nav ul {
+        width: 700px;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: #000;
+        text-decoration: none;
+        font-size: 1rem;
+        letter-spacing: 1px;
+
+        padding: 10px 28px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        transition: 0.6s ease;
+      }
+
+      nav ul li.active a {
+        background-color: #fff;
+        border-radius: 10px;
+        color: #000;
+      }
+
+      ul li a:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="kid df">
+        <img src="img/popcorn.png" alt="logo" />
+        <h1>Teffy</h1>
+      </div>
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Report</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

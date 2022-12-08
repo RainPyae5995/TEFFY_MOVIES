@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+#contact{
+    width: 100%;
+    height: 100vh;
+
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/goh.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .ctt{
+    width: 100%;
+    height: 500px;
+    /* background-color: #fff; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctt .box{
+    width: 65%;
+    height: 100%;
+    border-radius: 30px 80px 30px 80px;
+    box-shadow: 0px 0px 5px 3px #fafafa4d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1{
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+    margin-top: 10px;
+}
+
+.box form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box form div {
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 1.5em;
+    margin-left: 5px;
+    color: #fff;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    width: 500px;
+    display: block;
+    background-color: transparent;
+    color: #eee;
+    border-bottom: 2px solid transparent;
+    padding: 10px 5px;
+  }
+
+  input::placeholder{
+    color: #eee;
+  }
+
+  input:focus {
+    border-bottom: 2px solid #d5ebeb;
+  }
+
+  textarea{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #eee;
+    font-size: 1.3rem;
+  }
+
+  textarea:focus{
+    border: 2px solid #ddd;
+  }
+
+  button {
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(145deg, #94fdd3, #f6f47c);
+    border: none;
+    outline: none;
+    border-radius: 20px 50px 20px 50px;
+    text-transform: capitalize;
+    color: #222;
+
+    margin-top: 20px;
+
+    transition: all 0.3s;
+  }
+
+  button:hover {
+    background: linear-gradient(45deg, #63f8f8, #f8da88);
+    color: #000;
+  }

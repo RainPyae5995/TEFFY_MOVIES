@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <link href="img/logo.png" rel="icon" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+      body {
+        width: 100%;
+        height: 100vh;
+        font-family: "Zen Dots", cursive;
+      }
+
+      nav {
+        width: 100%;
+        height: 80px;
+
+        background-color: transparent;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      }
+
+      nav .kid {
+        width: 300px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav .kid img {
+        width: 100px;
+        margin-left: 18px;
+      }
+
+      nav .kid h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      nav ul {
+        width: 500px;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-right: 28px;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.02rem;
+        letter-spacing: 1px;
+
+        padding: 10px 28px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        transition: 0.3s ease;
+      }
+
+      nav ul li.active a {
+        background-color: #d8c2e9;
+        border-radius: 10px;
+        color: #000;
+      }
+
+      ul li a:hover {
+        background-color: #d8c2e9;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="contact">
+      <nav>
+        <div class="kid">
+          <img src="img/popcorn.png" alt="logo" />
+          <h1>Teffy</h1>
+        </div>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="report.html">Report</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="ctt">
+        <div class="box">
+          <h1>have some questions?</h1>
+          <form action="" method="post">
+            <div>
+              <label for="">Username</label>
+              <input type="text" name="" id="" placeholder="Type your name" />
+            </div>
+            <div>
+              <label for="">Email</label>
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="What's your email?"
+              />
+            </div>
+            <textarea name="" id="" cols="39" rows="5">Your Questions</textarea>
+          </form>
+          <button>send message</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
